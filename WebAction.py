@@ -5,6 +5,7 @@ import Process64 as P64
 
 ##### config
 loadingtime = 8
+keyword = "Woman"
 #####
 
 ''' sample of selenium
@@ -30,7 +31,7 @@ assert "Google" in driver.title,"Not Found Target Text in Web Title"
 #    operation that you want on WebSite
 elem = driver.find_element_by_name("q")
 elem.clear()
-elem.send_keys("Woman")
+elem.send_keys(keyword)
 elem.send_keys(Keys.RETURN)
 
 PicIndex = 0
